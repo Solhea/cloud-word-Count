@@ -20,11 +20,8 @@ const DropZone = () => {
         // Do whatever you want with the file contents
         const string = reader.result;
         setTextItself(string);
-        console.log(string);
-        console.log(textItself);
         var result = splitter(string);
         setTextInfo(splitter(string, "info"));
-        console.log(result);
         setWordTable(result);
       };
       reader.readAsText(file);
