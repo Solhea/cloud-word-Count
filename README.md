@@ -1,5 +1,5 @@
 # Things to do Before Run
-Write this code to terminal code by code.
+Write this codes to terminal line by line.
 
 - npm install fixed-data-table-2 --save
 - npm install --save react-dropzone
