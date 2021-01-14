@@ -1,6 +1,7 @@
 function splitter(str, id) {
   var counts = {};
   var keys = [];
+  var data = [];
   var wordsLength = 0;
 
   const allwords = str.replace(/(\n)/gm, "");
@@ -28,12 +29,12 @@ function splitter(str, id) {
     var countB = counts[b];
     return countB - countA;
   }
-  var all = [];
 
   //Create whole string for words and counts
+  
   for (var k = 0; k < keys.length; k++) {
     var key = keys[k];
-    all.push([key, counts[key]]);
+    data.push([key, counts[key]]);
   }
 
   if (id === "info") {
@@ -44,7 +45,7 @@ function splitter(str, id) {
       keys.length
     );
   } else {
-    return all;
+    return data;
   }
 }
 
